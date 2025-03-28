@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Coffee_Shop</title>
+</head>
+<body>
+    <!--header and navbar-->
+    <header class="navbar navbar-expand-lg sticky-top bg-light">
+        <div class="container-xxl bg-light-subtle px-3">
+            
+            <!--logo link--> 
+            <a class="navbar-brand m-2" href="index.html">Coffee Shop</a>
+            
+            <!--toggle button for small screens-->  
+            <button class="navbar-toggler bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!--navbar links--> 
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+
+    <main class="container-xxl bg-light px-3 py-4 mt-3">
+        <!--about us story, the image on the side-->
+        <div class="row mb-4">
+            <div class="col-12 col-md-8 mb-3 mb-md-0">
+                <h5 class="card-title mb-3">About Us</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at mollis felis. Cras in justo ut urna maximus maximus ultrices eget sapien. Praesent tortor odio, auctor eu luctus sit amet, egestas id massa. Fusce a eros odio. Fusce et quam lobortis, blandit ante ac, auctor tortor. Sed facilisis, sapien id tristique placerat, ante nulla lacinia tortor, ac venenatis lacus erat quis est. Sed sollicitudin eros id metus posuere malesuada. Maecenas interdum lacinia nisl. Aliquam placerat commodo porta.<br>
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sit amet nunc volutpat, sollicitudin ante sit amet, vestibulum ex. Integer id turpis metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et purus nisi. Praesent ultrices dolor lorem, sit amet viverra ipsum blandit non. Sed scelerisque semper porta. Nullam dolor quam, convallis at iaculis sit amet, finibus at ipsum. Mauris vitae tempus sapien. Nullam tristique sit amet est nec mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ullamcorper porta rutrum. Vivamus.</p>
+            </div>
+    
+            <div class="col-12 col-md-4">
+                <img src="aboutUsImg.jpg" class="img-fluid rounded" alt="about us image">
+            </div>
+        </div>
+
+        <!--locations-->
+        <div class="container mt-5 py-4">
+            <h2 class="text-center mb-4">Our Locations</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-12">
+                    <div class="card mx-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">Lorem tincidunt ligula</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card mx-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">Nullam tincidunt ligula</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="card mx-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lorem</h5>
+                            <p class="card-text">Nullam tincidunt ligula</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FAQ, dropdown menu-->
+        <div class="container mt-5 py-4">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Nullam tincidunt ligula?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt ligula.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Nullam tincidunt ligula?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Nullam tincidunt ligula?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--footer-->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container-xxl">
+            <div class="row g-4 text-center text-md-start">
+
+                <div class="col-md-4 col-12 m-lg-3">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-dark">Home</a></li>
+                        <li><a href="menu.html" class="text-decoration-none text-dark">Menu</a></li>
+                        <li><a href="aboutUs.html" class="text-decoration-none text-dark">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-12">
+                    <h5 class="mb-3">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><p>Olivia Terris</p></li>
+                        <li><a href="#" class="text-decoration-none text-dark">GitHub</a></li>
+                    </ul>
+                </div>
+
+            <div class="text-center mt-4 pt-4 border-top">
+                <p class="mb-0 text-dark">Coffee makes your life better </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
